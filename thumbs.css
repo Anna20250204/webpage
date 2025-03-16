@@ -1,0 +1,89 @@
+.thumbs__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 60px 0 0 200px;
+    padding: 20px 0 0 10px;
+}
+.thumbs__item{
+    width: 25%;
+    margin: 0 0 15px 0;
+    padding: 0 10px;
+}
+.thumbs__thumbnail{
+    max-width: 100%;
+    margin: 0 0 10px 0;
+}
+.thumbs__info{
+    display: flex;
+}
+.thumbs__profile{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: olive;
+}
+.thumbs__text{
+    width: calc(100% - 36px);
+    padding-left: 10px;
+}
+
+/* Randomly placed clickable text */
+.thumbs__text--title {
+    position: absolute;
+    font-size: 1.5rem;
+    color: rgb(126, 3, 3);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.thumbs__text--title:hover {
+    color: yellow;
+}
+
+/* Image Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80vh;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.thumbs__text--owner{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: green;
+    margin-bottom: 0.2em;
+
+}
+.thumbs__text--anal{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: green;
+
+}
+
+

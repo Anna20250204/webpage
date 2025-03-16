@@ -1,0 +1,221 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Poetic Typeface</title>
+    <link href="Reset.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
+    <link href="navigation.css" rel="stylesheet">
+    <link href="thumbs.css" rel="stylesheet">
+    <style>
+        .ham {
+            position: relative;
+            width: 40px; /* Adjust size */
+            height: 40px;
+            border-radius: 5px;
+            background: rgb(17, 50, 17);
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ham .line {
+            position: absolute;
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            transition: 0.3s ease;
+        }
+        .ham .top { top: 10px; }
+        .ham .mid { top: 18px; }
+        .ham .bottom { top: 26px; }
+
+        .ham:hover .top { transform: rotate(45deg) translateY(5px); }
+        .ham:hover .mid { opacity: 0; }
+        .ham:hover .bottom { transform: rotate(-45deg) translateY(-5px); }
+
+        .header__profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            h1.typeface-title a {
+                color: black; 
+                font-size: 40px; 
+                font-weight: bold;
+                text-decoration: none;
+                margin: 5px;
+                display: inline-block;
+            }
+
+            h1.poetic-title a {
+                color: black;
+                font-size: 40px;
+                font-weight: bold;
+                text-decoration: none;
+                margin: 5px;
+                display: inline-block;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="AdobeStock_427481493.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+        <h1 class="poetic-title">
+            <a href="video.mp4">P</a>
+            <a href="newpage.html">O</a>
+            <a href="#popup-e">E</a>
+            <a href="#popup-t">T</a>
+            <a href="#popup-i">I</a>
+            <a href="#popup-c">C</a>
+        </h1>
+    
+        <h1 class="typeface-title">
+            <a href="#popup-T">T</a>
+            <a href="#popup-Y">Y</a>
+            <a href="#popup-P">P</a>
+            <a href="#popup-E">E</a>
+            <a href="#popup-F">F</a>
+            <a href="#popup-A">A</a>
+            <a href="#popup-C">C</a>
+            <a href="#popup-E2">E</a>
+        </h1>
+    
+        <!-- Pop-up Images -->
+        <div class="popup" id="popup-e">
+            <a href="#" class="close">&times;</a>
+            <img src="image-e.jpg" alt="Poetic E Image">
+        </div>
+        <div class="popup" id="popup-t">
+            <a href="#" class="close">&times;</a>
+            <img src="image-t.jpg" alt="Poetic T Image">
+        </div>
+        <div class="popup" id="popup-i">
+            <a href="#" class="close">&times;</a>
+            <img src="image-i.jpg" alt="Poetic I Image">
+        </div>
+        <div class="popup" id="popup-c">
+            <a href="#" class="close">&times;</a>
+            <img src="image-c.jpg" alt="Poetic C Image">
+        </div>
+    
+        <!-- Pop-up images for "Typeface" letters -->
+        <div class="popup" id="popup-T"><a href="#" class="close">&times;</a><img src="image-T.jpg"></div>
+        <div class="popup" id="popup-Y"><a href="#" class="close">&times;</a><img src="image-Y.jpg"></div>
+        <div class="popup" id="popup-P"><a href="#" class="close">&times;</a><img src="image-P.jpg"></div>
+        <div class="popup" id="popup-E"><a href="#" class="close">&times;</a><img src="image-E.jpg"></div>
+        <div class="popup" id="popup-F"><a href="#" class="close">&times;</a><img src="image-F.jpg"></div>
+        <div class="popup" id="popup-A"><a href="#" class="close">&times;</a><img src="image-A.jpg"></div>
+        <div class="popup" id="popup-C"><a href="#" class="close">&times;</a><img src="image-C.jpg"></div>
+        <div class="popup" id="popup-E2"><a href="#" class="close">&times;</a><img src="image-E2.jpg"></div>
+    </div>
+<!--    
+
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="AdobeStock_427481493.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h1 class="poetic-title">Poetic Typeface</h1>
+
+        <div class="overlay-text">
+            
+            <div class="thumbs__text--title" onclick="showImage('Poem1.png')">When you are old</div>
+            <div class="thumbs__text--title" onclick="showImage('image2.jpg')">Another Poem</div>
+            <div class="thumbs__text--title" onclick="showImage('image3.jpg')">Poem 2</div>
+            <div class="thumbs__text--title" onclick="showImage('image4.jpg')">Poem 3</div>
+        </div>
+    </div>
+    
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img id="modalImage" class="modal-content">
+    </div>
+
+    <script src="script.js"></script>
+-->
+    <header class="header">
+        <div class="header__wrapper">
+            <h1 class="header__start">
+                <button class="header__hamburger">&#9776;</button>
+                <span class="header__title">The Poetic Typeface</span>
+            </h1>
+            <div class="header__center">
+                <form class="header__form" onsubmit="return false">
+                    <input class="header__input--text" placeholder="select">
+                    <button class="header__input--button">Hi</button>
+                </form>
+            </div>
+            <div class="header__end">
+                <button class="header__search">&#128269;</button>
+                <div class="header__profile">
+                    <div class="ham">
+                        <div class="line top"></div>
+                        <div class="line mid"></div>
+                        <div class="line bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> 
+
+    <!-- <nav class="nav">
+        <ul class="nav__wrapper">
+            <li>
+                <button class="nav__icon">&#9824;</button>
+                <a href="module design.html" class="nav_menu">Archive</a>
+            </li>
+            <li>
+                <button class="nav__icon">&#9824;</button>
+                <a href="Excersize final copy.mp4" class="nav_menu" target="_blank">Video</a>
+            </li>
+            <li>
+                <button class="nav__icon">&#9824;</button>
+                <a href="citation.html" class="nav_menu">Citation List</a>
+            </li>
+        </ul>
+    </nav> 
+    
+    <script src="jsmodule.js"></script> -->
+    
+    <script>
+
+        function showImage(imgSrc) {
+            let modal = document.getElementById("imageModal");
+            let modalImage = document.getElementById("modalImage");
+    
+            modalImage.src = imgSrc; 
+            modal.style.display = "block";
+        }
+
+        function closeImage() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+    
+      
+        document.addEventListener("DOMContentLoaded", function () {
+            let texts = document.querySelectorAll(".thumbs__text--title");
+            
+            texts.forEach(text => {
+                let x = Math.random() * 80 + 10; 
+                let y = Math.random() * 80 + 10; 
+                
+                text.style.left = x + "%";
+                text.style.top = y + "%"; 
+
+                
+                
+            });
+
+            
+
+}); 

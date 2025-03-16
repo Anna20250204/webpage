@@ -1,0 +1,183 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Button Styles */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 600px;
+    position: absolute;
+}
+
+.circle-button {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+.circle-button:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}
+
+/* Popup Styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Show Popup when Targeted */
+.popup:target {
+    display: block;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+/* Image Styling */
+.popup img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Video Styling */
+.popup video {
+    width: 100%;
+    max-width: 400px;
+}
+
+.button-container {
+    display: none; /* Initially hidden */
+    flex-direction: row; /* Arrange buttons horizontally */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: fixed; /* Change from absolute to fixed */
+    bottom: 10%; /* Moves buttons to the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9); /* Optional background */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.show-buttons {
+    display: flex !important;
+}
+
+/* Hamburger Menu Styles */
+.ham {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: rgb(237, 9, 9);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Lines inside the hamburger */
+.ham .line {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.ham .top { top: 10px; }
+.ham .mid { top: 18px; }
+.ham .bottom { top: 26px; }
+
+/* When clicked, turn into an "X" */
+.ham.active .top { transform: rotate(45deg) translateY(8px); }
+.ham.active .mid { opacity: 0; }
+.ham.active .bottom { transform: rotate(-45deg) translateY(-8px); }
+
+/* Sidebar Navigation Menu */
+.sidebar-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden by default */
+    width: 250px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: left 0.4s ease-in-out;
+    z-index: 1000;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu ul li {
+    padding: 15px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sidebar-menu ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sidebar-menu ul li a:hover {
+    color: red;
+}
+
+/* Overlay Effect */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 999;
+}
+
+/* Active states */
+.sidebar-menu.active {
+    left: 0;
+}
+
+
